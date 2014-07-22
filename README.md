@@ -1,4 +1,0 @@
-Android-Development
-===================
-
-Android Applications
