@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="lightgrey">#C0C0C0</color>
+    <color name="grey">#A0A0A0</color>
+
+    <string name="app_name">LHU Brain</string>
+    <string name="action_settings">Settings</string>
+    <string name="play">Games</string>
+    <string name="highscores">Highscores</string>
+    <string name="options">Options</string>
+    <string name="back">Back</string>
+    <string name="header">Layout and Design by: Kyle Leber</string>
+    <string name="title_activity_games">Game Page</string>
+    <string name="login">Login</string>
+    <string name="logo">LHU BRAIN</string>
+    <string name="passwordPrompt">Enter Password</string>
+    <string name="usernamePrompt">Enter Username</string>
+    <string name="title_activity_game_list">GameListActivity</string>
+    <string name="title_activity_sign_in">SignInActivity</string>
+    <string name="status">Login Status: </string>
+    <string name="title_activity_login_page">LoginPageActivity</string>
+    <string name="playOffline">Play Offline</string>
+    <string name="playOnline">Play Online</string>
+    <string name="accountCreationHeader">Create An Account!</string>
+    <string name="createAccount">Create Account</string>
+    <string name="pictureWordAssociation">Picture / Word</string>
+    <string name="mathematics">Mathematics</string>
+    <string name="logic">Logic</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_signin">SigninActivity</string>
+    <string name="loginresponse">Login Response: </string>
+    <string name="currentUser">Logged in as: </string>
+    <string name="title_activity_account_creation">AccountCreation</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_picture_word">PictureWordAssociation</string>
+    <string name="title_activity_animal_association">AnimalAssociationActivity</string>
+    <string name="title_activity_game_results">GameResults</string>
+    <string name="title_activity_high_scores">HighScoresActivity</string>
+
+    <string-array name="highscore_choices">
+        <item>Picture to Word</item>
+        <item>Color Association</item>
+        <item>Word to Animal</item>
+        <item>Addition/Subtraction</item>
+        <item>Multiplication/Division</item>
+        <item>Order Of Operations</item>
+        <item>Target Clicker</item>
+    </string-array>
+    <string-array name="colorblind_options">
+        <item>deuteranopia</item>
+        <item>protanopia</item>
+        <item>tritanopia</item>
+    </string-array>
+
+    <string name="title_activity_color_association">ColorAssocationActivity</string>
+    <string name="title_activity_animal_word_association">AnimalWordAssociationActivity</string>
+    <string name="title_activity_secret_one_developers">SecretOneDevelopers</string>
+    <string name="title_activity_mathematics">MathematicsActivity</string>
+    <string name="title_activity_math_games">MathGames</string>
+    <string name="title_activity_logic">LogicActivity</string>
+    <string name="title_activity_target_activty">TargetActivty</string>
+    <string name="title_activity_reaction">Reaction</string>
+    <string name="title_activity_reaction_activity">ReactionActivity</string>
+
+</resources>

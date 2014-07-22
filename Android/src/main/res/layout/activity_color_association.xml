@@ -1,0 +1,223 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="top"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".AnimalAssociationActivity" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:id = "@+id/game"
+        android:layout_weight="0"
+        >
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:onClick="splashClicked"
+            android:background="@drawable/colorsplash"
+            android:id = "@+id/splash"
+            android:layout_weight="0"
+            />
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:layout_gravity="fill_vertical"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/android"
+                    android:layout_weight="1"/>
+            <Button
+                android:id="@+id/image1"
+                style="@style/button_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradientbutton"
+                android:onClick="checkAnswer"
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/image2"
+                style="@style/button_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradientbutton"
+                android:onClick="checkAnswer"
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/image3"
+                style="@style/button_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradientbutton"
+                android:onClick="checkAnswer"
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/image4"
+                style="@style/button_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradientbutton"
+                android:onClick="checkAnswer"
+                android:textSize="25sp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/scoreTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score: "
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/scoreValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/timerTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Timer: "
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/timerValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="30"
+                android:textColor="#ffffff"
+                android:textSize="25sp"
+                android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </RelativeLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:background="@color/lightgrey"
+        android:id = "@+id/options"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight = ".5"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight = ".2"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight = "1"
+                android:text = "Music"/>
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textOn="ON"
+                android:textOff="OFF"
+                android:id = "@+id/music"
+                android:onClick = "musicToggleClicked"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight = ".2"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight = "1"
+                android:text = "Sound"/>
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textOn="ON"
+                android:textOff="OFF"
+                android:id = "@+id/sound"
+                android:onClick = "soundToggleClicked"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight = ".2"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight = "1"
+                android:text = "Colorblind"/>
+            <ToggleButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textOn="ON"
+                android:textOff="OFF"
+                android:id = "@+id/colorblind"
+                android:onClick = "colorblindToggleClicked"
+                />
+        </LinearLayout>
+        <Spinner
+            android:id="@+id/color_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".15"
+            android:background="#FFFFFF" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight = "1"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:onClick="optionsbackClicked"
+            android:background="@android:drawable/btn_default"
+            android:id="@+id/back"
+            android:layout_weight=".1"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</LinearLayout>
